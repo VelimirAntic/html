@@ -1,0 +1,133 @@
+$background_color: rgb(35, 48, 35);
+$name_color: white;
+$name_size: 50px;
+$name_fontfamily:"Skranji-Regular";
+$mark_width: 100px;
+$mark_height: 100px;
+$mark_sm_width: 50px;
+$mark_sm_height: 50px;
+$photo_with: 400px;
+$photo_height: 500px;
+$photo_sm_with: 350px;
+$photo_sm_height: 480px;
+$title_size: 20px;
+$content_size: 20px;
+$hover_color: yellowgreen;
+$desc_size: 30px;
+$desc_color: white;
+body {
+    background-color: $background_color;
+    min-width: 600px;
+
+    #carta {
+        margin: 20px;
+        border: 10px solid blue;
+        border-radius: 50px;
+        background-image: url('./img/background.jpg');
+        background-color: black opacity($color: #000000);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        box-shadow: 0 0 -10px blue;
+        >div {
+            display: flex;
+            justify-content: center;
+        }
+
+        #escudo {
+            width: $mark_width;
+            height: $mark_height;
+            @media (max-width: 800px) {
+                width: $mark_sm_width;
+                height: $mark_sm_height;
+            }
+        }
+
+        #nombre {
+            text-align: center;
+            color: $name_color;
+            text-shadow: 1px;
+            font-size: $name_size;
+            text-shadow: 4px 4px 3px #000000;
+            font-family: $name_fontfamily;
+        }
+
+        #foto {
+            margin-top: 10px;
+            border:10px rgb(187, 183, 183) solid;
+            border-radius: 50%;
+            width: $photo_with;
+            height: $photo_height;
+            box-shadow:0 0 20px blue;
+            @media (max-width: 950px) {
+                width: $photo_sm_with;
+                height: $photo_sm_height;
+            }
+        }
+
+        #contenedor {
+            position: absolute;
+            left: -15px;
+            top: 300px;
+
+            :hover {
+                cursor: pointer;
+            }
+
+            @media (max-width: 950px) {
+                left: 10px;
+                top: 400px;
+            }
+
+            #datos>div {
+                display: flex;
+                width: 200px;
+                height: 40px;
+                margin: 5px;
+                border: yellow 1px solid;
+                box-shadow: 0px 0px 13px green;
+
+                @media (max-width: 800px) {
+                    width: 150;
+                }
+
+                .itemI {
+                    width: 60%;
+                    height: 40px;
+                    // background-color: rgba(39, 166, 189, 0.3);
+                    background-image: linear-gradient(rgb(123, 255, 0), rgb(0, 255, 149));
+                    text-align: start;
+                    padding-left: 10px;
+                    line-height: 40px;
+                    font-size: $title_size;
+                    font-weight: bolder;
+                }
+
+                .itemD {
+                    width: 40%;
+                    height: 40px;
+                    background-image: linear-gradient(rgb(238, 255, 0), rgb(238, 255, 0));
+                    text-align: center;
+                    line-height: 40px;
+                    text-align: end;
+                    font-size: $content_size;
+                    font-weight: bolder;
+                    padding-right: 5px;
+                }
+
+                :hover {
+                    color: $hover_color;
+                    background-image: linear-gradient(rgb(255, 94, 0), rgb(255, 0, 0));
+                }
+            }
+        }
+
+        #description {
+            color: $desc_color;
+            font-size: $desc_size;
+            text-align: center;
+            margin: 40px;
+            text-shadow: 0px 0px 13px rgb(126, 128, 0);
+        }
+    }
+}

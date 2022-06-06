@@ -1,0 +1,14 @@
+{
+    "player":{
+        "name":"Jack Smith",
+        "height":180,
+        "age":25,
+        "weight":80,
+        "goals":30,
+        "assistance":1,
+        "punctuation":8.07,
+        "shield":"./img/shield.png",
+        "description":"Mikel Oyarzabal es segunda punta de la Real Sociedat,Su numbers es el 10 y provience de Eibar, Gipuzkoa.",
+        "photo":"./img/avatar2.jpg"
+    }
+}

@@ -1,0 +1,139 @@
+body {
+  background-color: #233023;
+  min-width: 600px;
+}
+
+body #carta {
+  margin: 20px;
+  border: 10px solid blue;
+  border-radius: 50px;
+  background-image: url("./img/background.jpg");
+  background-color: black 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  -webkit-box-shadow: 0 0 -10px blue;
+          box-shadow: 0 0 -10px blue;
+}
+
+body #carta > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #carta #escudo {
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 800px) {
+  body #carta #escudo {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+body #carta #nombre {
+  text-align: center;
+  color: white;
+  text-shadow: 1px;
+  font-size: 50px;
+  text-shadow: 4px 4px 3px #000000;
+  font-family: "Skranji-Regular";
+}
+
+body #carta #foto {
+  margin-top: 10px;
+  border: 10px #bbb7b7 solid;
+  border-radius: 50%;
+  width: 400px;
+  height: 500px;
+  -webkit-box-shadow: 0 0 20px blue;
+          box-shadow: 0 0 20px blue;
+}
+
+@media (max-width: 950px) {
+  body #carta #foto {
+    width: 350px;
+    height: 480px;
+  }
+}
+
+body #carta #contenedor {
+  position: absolute;
+  left: -15px;
+  top: 300px;
+}
+
+body #carta #contenedor :hover {
+  cursor: pointer;
+}
+
+@media (max-width: 950px) {
+  body #carta #contenedor {
+    left: 10px;
+    top: 400px;
+  }
+}
+
+body #carta #contenedor #datos > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  height: 40px;
+  margin: 5px;
+  border: yellow 1px solid;
+  -webkit-box-shadow: 0px 0px 13px green;
+          box-shadow: 0px 0px 13px green;
+}
+
+@media (max-width: 800px) {
+  body #carta #contenedor #datos > div {
+    width: 150;
+  }
+}
+
+body #carta #contenedor #datos > div .itemI {
+  width: 60%;
+  height: 40px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7bff00), to(#00ff95));
+  background-image: linear-gradient(#7bff00, #00ff95);
+  text-align: start;
+  padding-left: 10px;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+body #carta #contenedor #datos > div .itemD {
+  width: 40%;
+  height: 40px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eeff00), to(#eeff00));
+  background-image: linear-gradient(#eeff00, #eeff00);
+  text-align: center;
+  line-height: 40px;
+  text-align: end;
+  font-size: 20px;
+  font-weight: bolder;
+  padding-right: 5px;
+}
+
+body #carta #contenedor #datos > div :hover {
+  color: yellowgreen;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff5e00), to(red));
+  background-image: linear-gradient(#ff5e00, red);
+}
+
+body #carta #description {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin: 40px;
+  text-shadow: 0px 0px 13px #7e8000;
+}
+/*# sourceMappingURL=style.css.map */
